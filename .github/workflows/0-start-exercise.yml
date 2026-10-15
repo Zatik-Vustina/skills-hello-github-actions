@@ -1,14 +1,11 @@
-name: Step 0 # Start Exercise
-
+name: Post welcome comment
 on:
-  push:
-    branches:
-      - main
-
+  pull_request:
+    types: [opened]
 permissions:
-  contents: write
-  actions: write
-  issues: write
+  pull-requests: write
+  
+
 
 env:
   STEP_1_FILE: ".github/steps/1-step.md"
